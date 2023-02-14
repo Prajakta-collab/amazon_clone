@@ -16,7 +16,7 @@ import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';const Header
 
   {/* Search box*/}
 <div className="header__search">
-  <input type="test" className='header__searchInput'/>
+  <input type="test" className='header__searchInput' placeholder='Search Amazon.in'/>
   <SearchIcon className="header__searchIcon"/></div>
 
     

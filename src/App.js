@@ -10,6 +10,7 @@ import {
   Routes
 } from "react-router-dom";
 import Header from "./components/Header";
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -19,11 +20,11 @@ function App() {
     <Routes>
       <Route path="/login" ></Route>
        
-        <Route path="/checkout" >
+        <Route path="/checkout" element={<Header/>}>
        
       </Route>
 
-      <Route path="/" element={<Header/>}></Route>
+      <Route path="/" element={<><Header/><Home/></>}></Route>
     
     </Routes>
     </div>
