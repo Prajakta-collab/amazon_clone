@@ -12,6 +12,7 @@ import {
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Checkout from "./components/Checkout";
+import Login from "./components/Login";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
     <div className="app">
    
     <Routes>
-      <Route path="/login" ></Route>
+      <Route path="/login" element={<Login/>}></Route>
        
         <Route path="/checkout" element={<><Header/> <Checkout/></>}>
        
