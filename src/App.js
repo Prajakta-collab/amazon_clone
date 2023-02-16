@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
+import Checkout from "./components/Checkout";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
     <Routes>
       <Route path="/login" ></Route>
        
-        <Route path="/checkout" element={<Header/>}>
+        <Route path="/checkout" element={<><Header/> <Checkout/></>}>
        
       </Route>
 
